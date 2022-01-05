@@ -5,3 +5,4 @@
 ![step3](latihan-2/step3.PNG)
 ![step4](latihan-2/step4.PNG)
 ![step5](latihan-2/step5.PNG)
+![step5](latihan-2/step6.PNG)
