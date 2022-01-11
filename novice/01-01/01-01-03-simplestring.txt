@@ -1,0 +1,100 @@
+>>> 'spam eggs'
+'spam eggs'
+>>> 'doesn\'t'
+"doesn't"
+>>> "doesn't"
+"doesn't"
+>>> '"yes,"they said'
+'"yes,"they said'
+>>> "\"Yes,\"they said"
+'"Yes,"they said'
+>>> '"Isn\'t,"they said.'
+'"Isn\'t,"they said.'
+>>> '"isn\'t, they said.'
+'"isn\'t, they said.'
+>>> s = 'First line.\nSecond line.' 
+>>> print(s)
+First line.
+Second line.
+>>> print('C:\some\name')
+C:\some
+ame
+>>> print(r'C:\some\name')
+C:\some\name
+>>>>>> print("""\
+... Usage: thingy [OPTIONS]
+...      -h                        Display this usage message
+...      -H hostname               Hostname to connect to
+... 
+... ''')
+... """)
+Usage: thingy [OPTIONS]
+     -h                        Display this usage message
+     -H hostname               Hostname to connect to
+
+''')
+
+>>> text = ('put several strings within parenthese' 
+... 'to have them joine together')
+>>> 3 * 'un' + 'ium'
+'unununium'
+>>> 'py' 'thon'
+'python'
+>>> prefix = 'Py'
+>>> prefix 'thon'
+  File "<stdin>", line 1
+    prefix 'thon'
+           ^
+SyntaxError: invalid syntax
+>>> ('un'*3) 'ium'
+  File "<stdin>", line 1
+    ('un'*3) 'ium'
+             ^
+SyntaxError: invalid syntax
+>>> prefix +'thon'
+'Python'
+>>> word[0]
+'p'
+>>> word[5]
+'n'
+>>> word[-1]
+'n'
+>>> word[-2]
+'o'
+>>> word[-6]
+'p'
+>>> word[0:2]
+'py'
+>>> word[2:5]
+'tho'
+>>> word[:2]
+'py'
+>>> word[4:]
+'on'
+>>> word[-2:]
+'on'
+>>> word[:2] + word[2:]
+'python'
+>>> word[:4] + word[4:]
+'python'
+>>> word[4:42]
+'on'
+>>> word[42:]
+''
+>>> word[0]= 'j'
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: 'str' object does not support item assignment
+>>> word[2:]=py
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'py' is not defined
+>>> 
+>>> 'J'+word[1:]
+'Jython'
+>>> word[:2] +'py'
+'pypy'
+>>> s = 'supercalifragilisticexpialidocious'
+>>> len(s)
+34
+

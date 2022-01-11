@@ -1,0 +1,75 @@
+>>> squares = [1,4,9,16,25]
+>>> squares
+[1, 4, 9, 16, 25]
+>>> squares[0]
+1
+>>> squares[-1]
+25
+>>> squares[-3:]
+[9, 16, 25]
+>>> squares[:]
+[1, 4, 9, 16, 25]
+>>> squares+[36,49,64,81,100]
+[1, 4, 9, 16, 25, 36, 49, 64, 81, 100]
+>>> cubes = [1,8,27,63,125]
+>>> cubes[3]=64
+>>> cubes
+[1, 8, 27, 64, 125]
+>>> lettes = ['a','b','c','e','f','g']
+>>> lettes
+['a', 'b', 'c', 'e', 'f', 'g']
+>>> lettes[2:5]
+['c', 'e', 'f']
+>>> lettes[2:5]= ['C','D','E']
+>>> lettes
+['a', 'b', 'C', 'D', 'E', 'g']
+>>> lettes[2:5]=[]
+>>> lettes
+['a', 'b', 'g']
+>>> lettes[:]=[]
+>>> lettes = ['a','b','c','d']
+>>> len(lettes)
+4
+>>> a=['a','b','c']
+>>> n=[1,2,3]
+>>> x=[a,n]
+>>> x[0]
+['a', 'b', 'c']
+>>> x
+[['a', 'b', 'c'], [1, 2, 3]]
+>>> x[0][1]
+'b'
+>>> 
+
+
+>>> a, b = 0, 1
+>>> while a<10:
+...     print(a)
+...     a,b = b,a+b
+... 
+0
+1
+1
+2
+3
+5
+8
+>>> 
+>>> 
+>>> i = 256*256
+>>> print('the value of i is ',i)
+the value of i is  65536
+>>> 
+>>> 
+>>> a,b = 0,1
+>>> while a<1000:
+... print(a,end=',')
+  File "<stdin>", line 2
+    print(a,end=',')
+    ^
+IndentationError: expected an indented block
+>>> while a<1000:
+...     print(a, end=',')
+...     a,b = b,a+b
+... 
+0,1,1,2,3,5,8,13,21,34,55,89,144,233,377,610,987,>>> 
