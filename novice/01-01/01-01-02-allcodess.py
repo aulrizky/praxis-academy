@@ -83,6 +83,12 @@
 #     x:int
 #     y:int
 
+#     __match_args__=["x","y"]
+
+#     def __init__(self,x,y):
+#         self.x = x
+#         self.
+
 # def where_is(point):
 #     match point:
 #         case Point(x=0,y=0):
@@ -97,7 +103,7 @@
 #             raise ValueError("Not a point")
 
 
-# Point(0,0)
+# Point(1,vars)
 # # Point(1, y=vars)
 # # Point(x=1, y=vars)
 # # Point(y=vars, x=1)
@@ -273,3 +279,17 @@
 #     return ham + ' and ' + eggs
 
 # f('spam')
+
+# from enum import Enum
+# class Color(Enum):
+#     RED = 0
+#     GREEN = 1
+#     BLUE = 2
+
+# match color:
+#     case Color.RED:
+#         print("I see red!")
+#     case Color.GREEN:
+#         print("Grass is green")
+#     case Color.BLUE:
+#         print("I'm feeling the blues :(")
