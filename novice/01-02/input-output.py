@@ -89,13 +89,24 @@
 # f = open('workfile','r')
 # print(f.readline())
 
-#f.write('This is a test\n')
+# f = open('workfile','w')
+# f.write('This is a test\n')
 # value = ('the answer', 42)
 # s = str(value) 
-# f.write(s)
+# print(f.write(s))
+# f = open('workfile','r')
+# print(f.read())
 
-# import json
-# x = [1,'simple','list']
-# print(json.dumps(x))
+# f = open('workfile','rb+')
+# f.write(b'0123456789abcdef')
+# print(f.seek(5))
+# print(f.read(1))
+# print(f.seek(-3, 2))
+# print(f.read(1))
+
+import json
+x = [1,'simple','list']
+print(json.dumps(x))
 # print(json.dumps(x, f))
 # x = json.load(f)
+
