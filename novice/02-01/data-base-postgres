@@ -1,0 +1,15 @@
+create table nama (nama varchar(255),alamat varchar(255));
+
+Schema |          Name           |   Type   |  Owner   
+--------+-------------------------+----------+----------
+ public | nama                    | table    | postgres
+ public | playground              | table    | postgres
+ public | playground_equip_id_seq | sequence | postgres
+
+insert table (type,color,location)values('swing','red','north')postgres-# ;
+insert table (type,color,location)values('swing','red','north')postgres-# ;
+
+ equip_id | type  | color | location 
+----------+-------+-------+----------
+        1 | swing | red   | north
+
