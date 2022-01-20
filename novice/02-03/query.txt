@@ -1,0 +1,20 @@
+
+23.  Date_Add() dan Date_Sub()
+24.  DateDiff()
+25.  Date_Format()
+26.  Drop Table
+delete table all included
+Drop Database()
+
+28.  AVG()
+29.  Count()
+30.  Max()
+31.  Min()
+32.  Sum()
+33.  Group By()
+34.  Having()
+35.  Ucase()
+36.  Lcase()
+37.  Mid()
+38.  Len()
+39.  Round()

@@ -1,0 +1,221 @@
+1.create database databaru
+
+
+2.create table tabelda( Id int, Nama varchar (255), Email varchar(50),
+Kota varchar(255))
+
+
+id|nama|email|kota|
+--+----+-----+----+
+
+id|nama   |email             |kota  |
+--+-------+------------------+------+
+ 1|wagiman|wagimanxx@gmai,com|Kediri|
+
+ insert into tabeldatabaru (id,nama,email,kota) values (1,'wagiman','wagimanxx@gmai,com','Kediri')
+
+ SELECT DISTINCT kota FROM tabeldata
+ kota  |
+------+
+Kediri|
+
+5. select * from tabeldata where nama = 'wagiman'
+id|nama   |email             |kota  |
+--+-------+------------------+------+
+ 1|wagiman|wagimanxx@gmai,com|Kediri|
+
+
+
+6. select * from tabeldatabaru t order by nama
+ id|nama   |email             |kota  |
+--+-------+------------------+------+
+ 2|testman|crips@gmail.com   |Kediri|
+ 1|wagiman|wagimanxx@gmai,com|Kediri|
+
+7. select * from tabeldatabaru Where nama like'z%'
+id|nama|email|kota|
+--+----+-----+----+
+
+8. SELECT * FROM tabeldatabaru WHERE kota IN (‘kediri’,’malang’)
+
+
+9. select * from tabeldatabaru where id between 5 and 8
+id|nama  |email     |kota    |
+--+------+----------+--------+
+ 5|aa    |aweqeqe   |wonosobo|
+ 6|ty    |kakikukoke|wakanada|
+ 7|wakana|wakii     |surabaya|
+ 8|kon   |kons      |demak   |
+
+10. insert into tabeldatabaru values (11,'redaksi','redaksi@kukikika@gmail.com','jakarta')
+
+11. update tabeldatabaru set email = 'wkwkw' where id =2
+
+12. delete  from tabeldatabaru where id = 11
+id|nama   |email             |kota    |
+--+-------+------------------+--------+
+ 1|wagiman|wagimanxx@gmai,com|Kediri  |
+ 3|mangan |A@gmail.          |Malang  |
+ 4|wee    |wqq               |wonosobo|
+ 5|aa     |aweqeqe           |wonosobo|
+ 6|ty     |kakikukoke        |wakanada|
+ 7|wakana |wakii             |surabaya|
+ 8|kon    |kons              |demak   |
+ 9|kin    |kun               |bali    |
+10|aku    |kamu              |solo    |
+ 2|testman|wkwkw             |Kediri  |
+
+13. SELECT tabeldatabaru.nama,tabeldatabaru.email,order.no_order
+FROM tabeldatabaru
+INNER JOIN order
+ON tabeldatabaru.id=order.id
+ORDER BY tabeldatabaru.nama
+select * from tabeldatabaru join order1 on tabeldatabaru.id = order1.id
+id|nama   |email             |id|nama |jumlah|jenis_kelamin|
+--+-------+------------------+--+-----+------+-------------+
+ 1|wagiman|wagimanxx@gmai,com| 1|qwewq|     4|wanita       |
+ 2|testman|wkwkw             | 2|qwe  |     7|laki         |
+ 3|mangan |A@gmail.          | 3|yyy  |     4|wanita       |
+ 4|wee    |wqq               | 4|padsa|   888|wanita       |
+ 5|aa     |aweqeqe           | 5|s    |    42|laki         |
+ 5|aa     |aweqeqe           | 5|s    |    42|laki         |
+ 5|aa     |aweqeqe           | 5|s    |    42|laki         |
+ 5|aa     |aweqeqe           | 5|s    |    42|laki         |
+ 5|aa     |aweqeqe           | 5|s    |    42|laki         |
+ 5|aa     |aweqeqe           | 5|s    |    42|laki         |
+ 5|aa     |aweqeqe           | 5|s    |    42|laki         |
+ 5|aa     |aweqeqe           | 5|s    |    42|laki         |
+ 5|aa     |aweqeqe           | 5|s    |    42|laki         |
+ 5|aa     |aweqeqe           | 5|s    |    42|laki         |
+14.select * from tabeldatabaru left join order1 on tabeldatabaru.id = order1.id
+id|nama   |email             |id|nama |jumlah|jenis_kelamin|
+--+-------+------------------+--+-----+------+-------------+
+ 1|wagiman|wagimanxx@gmai,com| 1|qwewq|     4|wanita       |
+ 2|testman|wkwkw             | 2|qwe  |     7|laki         |
+ 3|mangan |A@gmail.          | 3|yyy  |     4|wanita       |
+ 4|wee    |wqq               | 4|padsa|   888|wanita       |
+ 5|aa     |aweqeqe           | 5|s    |    42|laki         |
+ 5|aa     |aweqeqe           | 5|s    |    42|laki         |
+ 5|aa     |aweqeqe           | 5|s    |    42|laki         |
+ 5|aa     |aweqeqe           | 5|s    |    42|laki         |
+ 5|aa     |aweqeqe           | 5|s    |    42|laki         |
+ 5|aa     |aweqeqe           | 5|s    |    42|laki         |
+ 5|aa     |aweqeqe           | 5|s    |    42|laki         |
+ 5|aa     |aweqeqe           | 5|s    |    42|laki         |
+ 5|aa     |aweqeqe           | 5|s    |    42|laki         |
+ 5|aa     |aweqeqe           | 5|s    |    42|laki         |
+ 5|aa     |aweqeqe           | 5|s    |    42|laki         |
+ 5|aa     |aweqeqe           | 5|s    |    42|laki         |
+11|karo   |de                |  |     |      |             |
+10|aku    |kamu              |  |     |      |             |
+ 8|kon    |kons              |  |     |      |             |
+ 6|ty     |kakikukoke        |  |     |      |             |
+ 9|kin    |kun               |  |     |      |             |
+ 7|wakana |wakii             |  |     |      |             |
+15.right join
+
+d|nama   |email             |id|nama |jumlah|jenis_kelamin|
+-+-------+------------------+--+-----+------+-------------+
+1|wagiman|wagimanxx@gmai,com| 1|qwewq|     4|wanita       |
+2|testman|wkwkw             | 2|qwe  |     7|laki         |
+3|mangan |A@gmail.          | 3|yyy  |     4|wanita       |
+4|wee    |wqq               | 4|padsa|   888|wanita       |
+5|aa     |aweqeqe           | 5|s    |    42|laki         |
+5|aa     |aweqeqe           | 5|s    |    42|laki         |
+5|aa     |aweqeqe           | 5|s    |    42|laki         |
+5|aa     |aweqeqe           | 5|s    |    42|laki         |
+5|aa     |aweqeqe           | 5|s    |    42|laki         |
+5|aa     |aweqeqe           | 5|s    |    42|laki         |
+16.full join
+id|nama   |email             |id|nama |jumlah|jenis_kelamin|
+--+-------+------------------+--+-----+------+-------------+
+ 1|wagiman|wagimanxx@gmai,com| 1|qwewq|     4|wanita       |
+ 2|testman|wkwkw             | 2|qwe  |     7|laki         |
+ 3|mangan |A@gmail.          | 3|yyy  |     4|wanita       |
+ 4|wee    |wqq               | 4|padsa|   888|wanita       |
+ 5|aa     |aweqeqe           | 5|s    |    42|laki         |
+ 5|aa     |aweqeqe           | 5|s    |    42|laki         |
+ 5|aa     |aweqeqe           | 5|s    |    42|laki         |
+ 5|aa     |aweqeqe           | 5|s    |    42|laki         |
+ 5|aa     |aweqeqe           | 5|s    |    42|laki         |
+ 5|aa     |aweqeqe           | 5|s    |    42|laki         |
+ 5|aa     |aweqeqe           | 5|s    |    42|laki         |
+ 5|aa     |aweqeqe           | 5|s    |    42|laki         |
+ 5|aa     |aweqeqe           | 5|s    |    42|laki         |
+ 5|aa     |aweqeqe           | 5|s    |    42|laki         |
+ 5|aa     |aweqeqe           | 5|s    |    42|laki         |
+ 5|aa     |aweqeqe           | 5|s    |    42|laki         |
+11|karo   |de                |  |     |      |             |
+10|aku    |kamu              |  |     |      |             |
+ 8|kon    |kons              |  |     |      |             |
+
+17.union
+select nama from tabeldatabaru
+union
+select nama from order1
+nama   |
+-------+
+s      |
+kin    |
+aku    |
+kon    |
+mangan |
+wakana |
+wagiman|
+qwewq  |
+padsa  |
+karo   |
+yyy    |
+testman|
+
+
+18. alter table 
+alter table tabeldatabaru 
+add ttl date
+id|nama   |email             |kota    |ttl|
+--+-------+------------------+--------+---+
+ 1|wagiman|wagimanxx@gmai,com|Kediri  |   |
+ 3|mangan |A@gmail.          |Malang  |   |
+ 4|wee    |wqq               |wonosobo|   |
+ 5|aa     |aweqeqe           |wonosobo|   |
+ 6|ty     |kakikukoke        |wakanada|   |
+
+ 
+alter table tabeldatabaru 
+drop column ttl
+
+id|nama   |email             |kota    |
+--+-------+------------------+--------+
+ 1|wagiman|wagimanxx@gmai,com|Kediri  |
+ 2|testman|wkwkw             |Kediri  |
+ 3|mangan |A@gmail.          |Malang  |
+
+alter table tabeldatabaru 
+DROP COLUMN kota
+id|nama   |email             |
+--+-------+------------------+
+ 1|wagiman|wagimanxx@gmai,com|
+ 3|mangan |A@gmail.          |
+ 4|wee    |wqq               |
+ 5|aa     |aweqeqe           |
+ 6|ty     |kakikukoke        |
+ 7|wakana |wakii             |
+
+
+ alter table tabeldatabaru 
+alter column email year
+
+
+19.select now 
+now                          |
+-----------------------------+
+2022-01-19 13:28:52.706 +0700|
+
+curdate
+curtime doesnt exist
+22.  Extract()
+select extract (year from waktu) from newtable;
+extract|
+-------+
+   2012|
+
