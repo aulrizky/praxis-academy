@@ -2,13 +2,14 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Flask Template Example</title>
+    {% block head %}
+      <title>{% block title %}{% endblock %} - Flask Super Example</title>
+    {% endblock %}
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet" media="screen">
     <style type="text/css">
       .container {
-        max-width: 500px;
-        padding-top: 100px;
+        max-width: 700px;
       }
       h2 {color: red;}
     </style>
@@ -25,7 +26,7 @@
           </button>
           <a class="navbar-brand" href="/">Jinja!</a>
         </div>
-    
+
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <ul class="nav navbar-nav">
             {{ nav_link('home', 'Home') }}
@@ -53,11 +54,11 @@
           </ul>
         </div><!-- /.navbar-collapse -->
       </div><!-- /.container-fluid -->
-    </nav>     
+    </nav>
     <div class="container">
       {% block heading %}
-    <h1>{% block page %}{% endblock %} - Flask Super Example</h1>
-      {% endblock %} 
+        <h1>{% block page %}{% endblock %} - Flask Super Example</h1>
+      {% endblock %}
       <h2>This is part of my base template</h2>
       <br>
       {% block content %}{% endblock %}
@@ -67,6 +68,7 @@
       <div class="footer">
         {% block footer %}
           Watch! This will be added to my base and child templates using the super powerful super block!
+          <br>
           <br>
           <br>
         {% endblock %}
